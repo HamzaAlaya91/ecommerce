@@ -27,6 +27,7 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
     }
 
 
+    @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
 
         HttpMethod[] theUnsupportedActions = {HttpMethod.PUT, HttpMethod.POST, HttpMethod.DELETE};
