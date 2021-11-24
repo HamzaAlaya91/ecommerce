@@ -18,7 +18,8 @@ public class CheckoutController {
 
     @PostMapping("/purchase")
     public PurchaseResponse placeOrder(@RequestBody Purchase purchase) {
-
+        System.out.println("----------****--------Go API Purchase----------****--------");
+        System.out.println(purchase);
         PurchaseResponse purchaseResponse = checkoutService.placeOrder(purchase);
 
         return purchaseResponse;
